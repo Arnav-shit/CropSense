@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropSense</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="p-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-green-700">CropSense</h1>
+            <!-- Hamburger menu for mobile -->
+            <button id="menu-button" class="md:hidden text-green-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="nav-menu" class="hidden md:flex space-x-8 text-green-800 font-medium">
+                <a href="#hero" class="hover:text-green-500 transition-colors">Home</a>
+                <a href="#how-it-works" class="hover:text-green-500 transition-colors">How It Works</a>
+                <a href="#features" class="hover:text-green-500 transition-colors">Features</a>
+                <a href="data_uploader.html" id="nav-data-uploader" class="hover:text-green-500 transition-colors">Data
+                    Uploader</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero"
+        class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-20 md:py-32 overflow-hidden shadow-2xl">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                Revolutionizing Agriculture with AI & Imaging
+            </h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 font-light opacity-90 animate-fade-in-up delay-150">
+                Harnessing the power of multispectral imaging and real-time sensor data to give farmers a precise,
+                proactive view of their fields.
+            </p>
+            <a href="#how-it-works"
+                class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all button-glow">
+                Learn More
+            </a>
+        </div>
+        <!-- SVG for a modern, abstract background -->
+        <svg class="absolute inset-0 w-full h-full object-cover opacity-10" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
+            <path fill="currentColor"
+                d="M0,192L48,170.7C96,149,192,107,288,112C384,117,480,171,576,192C672,213,768,203,864,176C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-green-700 scroll-animation">The CropSense Process</h3>
+            <p class="text-lg max-w-3xl mx-auto mb-12 text-gray-600 scroll-animation">
+                We combine diverse data sources with advanced AI to deliver precise, actionable insights.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1: Data Collection -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-8h2v-4h-2V12z" />
+                            <path
+                                d="M16 11h-1v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-green-600">1. Data Collection</h4>
+                    <p class="text-gray-500">
+                        Multispectral/hyperspectral imagery from drones and satellites, combined with on-ground sensor
+                        data, provides a complete picture of every inch of your field.
+                    </p>
+                </div>
+
+                <!-- Step 2: AI Analysis -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation"
+                    style="transition-delay: 0.2s;">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-8h2v-4h-2V12z" />
+                            <path
+                                d="M16 11h-1v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-green-600">2. AI Analysis</h4>
+                    <p class="text-gray-500">
+                        Our AI models process terabytes of data to detect subtle signs of crop stress, nutrient
+                        deficiencies, and pest infestations long before they are visible.
+                    </p>
+                </div>
+
+                <!-- Step 3: Actionable Insights -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation"
+                    style="transition-delay: 0.4s;">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-8h2v-4h-2V12z" />
+                            <path
+                                d="M16 11h-1v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-green-600">3. Actionable Insights</h4>
+                    <p class="text-gray-500">
+                        Receive a clear, simple report on a dashboard, with precise GPS coordinates for problem areas
+                        and recommended treatments to optimize your yield.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center text-green-700 scroll-animation">Key Features
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
+
+                <!-- Feature 1: Early Disease Detection -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=🦠" alt="Disease icon"
+                            class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Early Disease Detection</h4>
+                    <p class="text-gray-500">
+                        Identify pathogens up to two weeks before visible symptoms appear.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Targeted Pest Management -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.2s;">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=🐞" alt="Pest icon" class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Targeted Pest Management</h4>
+                    <p class="text-gray-500">
+                        Pinpoint pest hotspots with precision, reducing pesticide use and cost.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Nutrient Deficiency Mapping -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.4s;">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=🧪" alt="Nutrient icon"
+                            class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Nutrient Deficiency Mapping</h4>
+                    <p class="text-gray-500">
+                        Get a detailed map of your soil's nutrient needs and optimize fertilizer application.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Real-time Soil Condition -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=🌱" alt="Soil icon" class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Real-time Soil Condition</h4>
+                    <p class="text-gray-500">
+                        Monitor soil moisture and temperature for optimal irrigation planning.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Yield Prediction -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.2s;">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=📈" alt="Chart icon"
+                            class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Predictive Yield Analytics</h4>
+                    <p class="text-gray-500">
+                        Forecast harvest yields with high accuracy using historical data and current field conditions.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Resource Optimization -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.4s;">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://placehold.co/100x100/34d399/ffffff?text=💧" alt="Water drop icon"
+                            class="h-16 w-16">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Resource Optimization</h4>
+                    <p class="text-gray-500">
+                        Save water and fertilizer by applying inputs only where they are needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Uploader Section -->
+    <section id="ai-demo" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-green-700 scroll-animation">
+                Contribute Your Data
+            </h3>
+            <p class="text-lg max-w-2xl mx-auto mb-8 text-gray-600 scroll-animation">
+                Help us improve our models by uploading your own crop images and sensor data.
+            </p>
+            <a href="data_uploader.html"
+                class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full button-glow"
+                id="uploader-link">
+                Go to Data Uploader
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 mb-6">
+                <a href="#hero" class="hover:text-green-300 transition-colors">Home</a>
+                <a href="#how-it-works" class="hover:text-green-300 transition-colors">How It Works</a>
+                <a href="#features" class="hover:text-green-300 transition-colors">Features</a>
+                <a href="data_uploader.html" class="hover:text-green-300 transition-colors"
+                    id="footer-uploader-link">Data Uploader</a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 CropSense. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
