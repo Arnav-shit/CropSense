@@ -21,7 +21,7 @@
         <nav class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl font-bold text-green-700">CropSense</h1>
             <!-- Hamburger menu for mobile -->
-            <button id="menu-button" class="md:hidden text-green-800 focus:outline-none" aria-label="Menu">
+            <button id="menu-button" class="md:hidden text-green-800 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -90,7 +90,8 @@
                 </div>
 
                 <!-- Step 2: AI Analysis -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation step-2">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation"
+                    style="transition-delay: 0.2s;">
                     <div class="flex justify-center mb-6">
                         <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                             fill="currentColor">
@@ -108,7 +109,8 @@
                 </div>
 
                 <!-- Step 3: Actionable Insights -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation step-3">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-200 scroll-animation"
+                    style="transition-delay: 0.4s;">
                     <div class="flex justify-center mb-6">
                         <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                             fill="currentColor">
@@ -133,7 +135,7 @@
         <div class="container mx-auto px-6">
             <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center text-green-700 scroll-animation">Key Features
             </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
                 <!-- Feature 1: Early Disease Detection -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation">
@@ -160,7 +162,8 @@
                 </div>
 
                 <!-- Feature 2: Targeted Pest Management -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation delayed-02">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.2s;">
                     <div class="flex justify-center mb-4">
                         <!-- Targeted Pest Management Logo -->
                         <svg class="h-16 w-16" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Targeted pest management logo">
@@ -195,11 +198,12 @@
                 </div>
 
                 <!-- Feature 3: Nutrient Deficiency Mapping -->
-                <!-- Feature 3: Nutrient Deficiency Mapping -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation delayed-04">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.4s;">
                     <div class="flex justify-center mb-4">
                         <!-- Nutrient Deficiency Mapping Logo -->
                         <svg class="h-16 w-16" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Nutrient deficiency mapping logo">
+                            <!-- Frame -->
                             <rect x="22" y="18" width="84" height="92" rx="6" fill="#F9FAFB" stroke="#374151" stroke-width="5"/>
                             <!-- Top left patchwork -->
                             <path d="M26 22h52v34H26z" fill="#A7F3D0"/>
@@ -267,11 +271,12 @@
 
                 <!-- Feature 5: Yield Prediction -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
-                <!-- Feature 5: Yield Prediction -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation delayed-02">
+                    style="transition-delay: 0.2s;">
                     <div class="flex justify-center mb-4">
                         <!-- Predictive Analysis Logo -->
                         <svg class="h-16 w-16" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Predictive analysis logo">
+                            <!-- Bars -->
+                            <rect x="24" y="76" width="12" height="24" rx="2" fill="#059669"/>
                             <rect x="48" y="62" width="12" height="38" rx="2" fill="#10B981"/>
                             <rect x="72" y="48" width="12" height="52" rx="2" fill="#34D399"/>
                             <rect x="96" y="30" width="12" height="70" rx="2" fill="#059669"/>
@@ -293,10 +298,14 @@
                 </div>
 
                 <!-- Feature 6: Resource Optimization -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation delayed-04">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center scroll-animation"
+                    style="transition-delay: 0.4s;">
                     <div class="flex justify-center mb-4">
                         <!-- Resource Optimization Logo -->
                         <svg class="h-16 w-16" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Resource optimization logo">
+                            <!-- Circular arrows -->
+                            <g stroke="#9CA3AF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M90 22c11 6 19 18 19 32 0 3-.3 6-1 9"/>
                                 <path d="M99 22l-13 2 7 10"/>
                                 <path d="M20 65c-1-4-2-7-2-11 0-14 8-26 20-32"/>
                                 <path d="M18 54l5 12 11-7"/>
@@ -357,3 +366,4 @@
 </body>
 
 </html>
+
