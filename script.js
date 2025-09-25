@@ -39,3 +39,12 @@ type = "module" >
             });
         });
     });
+
+const analysisLink = document.getElementById('analysis-link');
+analysisLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+    const newUrl = `analysis.html?appId=${encodeURIComponent(appId)}&authToken=${encodeURIComponent(initialAuthToken)}`;
+    window.location.href = newUrl;
+});
